@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+background-color: #f0f0f0;
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="la tarea.html">la tarea</a></li>
+                <li><a href="fotosp.html">imagen</a></li>
+                <li><a href="bloques.html">bloques</a></li>
+                <li><a href="tablas.html">tablas</a></li>
+                <li><a href="aritmetica.html">aritmetica</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi página web. Esta es la sección de inicio donde puedes encontrar información general sobre mi sitio.</p>
+            <img src="imagen_inicio.jpg" alt="Imagen de Inicio">
+        </section>
+
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>Esta es la sección "Acerca de" donde puedes leer más sobre mí y mis intereses.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¡Contáctame si tienes alguna pregunta o comentario!</p>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web</p>
+    </footer>
+
+</body>
+</html>
